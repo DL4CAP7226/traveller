@@ -26,7 +26,12 @@ h2 {
     line-height: 46px;
 }
 
+input{
+    outline: none;
+    border: 1px solid $paragraph_light;
+    font-family: inter;
 
+}
 
 p {
     font-family: inter;

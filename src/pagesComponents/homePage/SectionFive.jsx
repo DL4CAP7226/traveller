@@ -70,6 +70,8 @@ const SectionFive = () => {
                     }
                 </div>
             </div>
+            <div className='image'>
+            </div>
         </section>
 
 

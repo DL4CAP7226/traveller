@@ -102,7 +102,8 @@
     }
 
     .benifit {
-height: 160px;
+        height: 160px;
+
         p {
             font-size: 14px;
             line-height: 24px;
@@ -127,10 +128,24 @@ height: 160px;
         border-radius: 6px;
         font-family: inter;
         margin-top: 20px;
-        &:hover{
+        @include flex(row, space-between, center);
+        padding: 0px 30px;
+
+        .icon {
+            font-size: 20px;
+            color: $btn_bg;
+        }
+
+        &:hover {
             background: $btn_bg;
             color: #fff;
             cursor: pointer;
+
+            .icon {
+                font-size: 20px;
+                color: $body_bg;
+            }
+
         }
     }
 

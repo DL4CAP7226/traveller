@@ -1,5 +1,9 @@
 import React from 'react'
-import { FiCheck } from "react-icons/fi";
+import { FiCheck ,FiArrowRight} from "react-icons/fi";
+
+
+
+
 const PlanCard = ({ data, checked }) => {
     return (
         <div className="cards" >
@@ -12,7 +16,7 @@ const PlanCard = ({ data, checked }) => {
                 <div className="benifit">
                     {data.benifits.map((b, idx) => <p key={idx}><FiCheck className='icon' /> {b}</p>)}
                 </div>
-                <button>Get Started</button>
+                <button>Get Started <FiArrowRight className='icon' /> </button>
             </div>
         </div>
     )

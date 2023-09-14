@@ -103,11 +103,9 @@
 
     .content {
         width: 40%;
-
         .uppeprCase {
             @include capitalText(left)
         }
-
         h2 {
             position: relative;
             @include border(0)
@@ -128,14 +126,11 @@
 
 .sectionFour {
     @include flex(row, space-between, flex-start);
-
     .content {
         width: 40%;
-
         .uppeprCase {
             @include capitalText(left)
         }
-
         button {
             @include button();
             margin: 0px 0px -20px -20px;
@@ -179,7 +174,6 @@
 .sectionFive {
     width: 100%;
     .content {
-
         .uppeprCase {
             @include capitalText(center)
         }
@@ -190,23 +184,28 @@
             @include border(50%)
         }
     }
-
+    .image {
+        height: 50vh;
+        background-image: url('../../images/secion6.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+    }
     .plans {
         padding: 30px;
         margin-top: 50px;
         background-color: $topsection_bg;
-
         .cards {
             @include flex(row, flex-start, flex-start);
-
         }
 
         .bills {
             @include flex(row, center, center);
-
             p {
                 margin: 0px 20px;
             }
         }
     }
 }
+
+
