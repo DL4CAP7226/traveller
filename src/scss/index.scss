@@ -26,7 +26,7 @@ h2 {
     line-height: 46px;
 }
 
-input{
+input {
     outline: none;
     border: 1px solid $paragraph_light;
     font-family: inter;
@@ -113,16 +113,3 @@ button {
 @import './components/components';
 
 
-
-.page-not-found {
-    min-height: 100vh;
-    width: 100%;
-    @include flex(row, flex-start, flex-start);
-    background-image: url('../images/notFound.png');
-    background-size: contain;
-    background-position: top center;
-
-    a {
-        font-family: inter;
-    }
-}

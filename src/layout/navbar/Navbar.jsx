@@ -1,11 +1,16 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 const links = [
   {
     id: 1,
-    pathName: "Reviews",
+    pathName: "Home",
     path: "/"
+  },
+  {
+    id: 1,
+    pathName: "Reviews",
+    path: "/Reviews"
   },
   {
     id: 2,
@@ -27,20 +32,24 @@ const links = [
 
 
 const Navbar = () => {
+  const [toggle, setToggle] = useState(false)
+
   return (
-    <header className='navbar'>
-      <div className='nav-content'>
-      <h1>Travelers</h1>
-      <div className='links'>
-        <ul>
-          {
-            links.map(l => <li key={l.id}><Link to={l.path}> {l.pathName} </Link></li>)
-          }
-        </ul>
-        <button className='get-price'>Get the App</button>
+    <header className={toggle ? ' navbar navbarBg' : "navbar"}>
+      <h2 className='logo' >Travellers</h2>
+      <div className='toggle' onClick={() => setToggle(!toggle)} >
+        <div className='toggleBox'>
+          <div className={toggle ? 'one four' : "one"}></div>
+          <div className={toggle ? "one five" : 'one'}></div>
+          <div className={toggle ? "one six" : 'one'}></div>
+        </div>
       </div>
-      </div>
-    
+      <ul className={toggle ? "navLink " : "navLink hide"}  >
+        {
+          links.map((l, idx) => <li key={idx} onClick={() => setToggle(!toggle)}><NavLink className={({ isActive }) => isActive ? "activeClass" : ""}
+            to={l.path}>{l.Icon}&nbsp;&nbsp;{l.pathName}</NavLink></li>)
+        }
+      </ul>
     </header>
   )
 }

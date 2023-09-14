@@ -85,16 +85,12 @@ const Footer = () => {
         </div>
       </div>
       <div className='bottemNavigation' >
-        <h1>Travelers</h1>
+        <h1>Travellers</h1>
         <ul className='linked'>
           {
             links.map(l => <li key={l.id}><Link to={l.path}> {l.pathName} </Link></li>)
           }
-
-
-
         </ul>
-
         <div className='functions'>
           {
             socialLinks.map((l, idx) => <a key={idx} href={l.link}>{l.icon}</a>)

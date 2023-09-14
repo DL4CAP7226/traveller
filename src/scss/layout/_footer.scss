@@ -1,38 +1,44 @@
 .footer {
     padding: 100px;
-    .functions{
-        a{
-            .icon{
+
+    .functions {
+        a {
+            .icon {
                 color: $paragraph_color
             }
         }
     }
-    .bottemNavigation{
-        @include flex(row,space-between,center);
-        .linked{
-        @include flex(row,flex-start,flex-start);
-        li{
-            margin: 20px
-        }
+
+    .bottemNavigation {
+        @include flex(row, space-between, center);
+
+        .linked {
+            @include flex(row, flex-start, flex-start);
+
+            li {
+                margin: 20px
+            }
 
         }
-     }
+    }
+
     .links {
         @include flex(row, flex-start, flex-start);
         border-bottom: 1px solid whitesmoke;
         padding-bottom: 50px;
 
-
         .link {
             width: 20%;
             margin: 0px 100px 0px 0px;
+
             .ratings {
                 margin-top: 20px;
             }
 
             .Subscribe {
                 @include flex(row, center, center);
-                margin-top: 10px;   
+                margin-top: 10px;
+
                 input {
                     height: 32px;
                     border-radius: 6px 0px 0px 6px;
@@ -56,6 +62,26 @@
                 li {
                     margin: 10px 0px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .footer {
+        padding: 20px;
+
+        .bottemNavigation {
+            flex-wrap: wrap;
+
+        }
+
+        .links {
+            @include flex(row, flex-start, flex-start);
+            flex-wrap: wrap;
+            .link {
+                width: auto;
+                margin-top: 50px;
             }
         }
     }
