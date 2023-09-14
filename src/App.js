@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import WebFont from 'webfontloader';
 import { Routes, Route } from 'react-router-dom'
-import { Home } from './pages'
+import { Home,PageNotFound } from './pages'
 import { Navbar, Footer } from './layout/'
 
 
@@ -18,6 +18,7 @@ const App = () => {
     <Navbar />
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/*' element={<PageNotFound />} />
     </Routes>
     <Footer />
   </>

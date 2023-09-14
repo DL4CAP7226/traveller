@@ -10,17 +10,17 @@ const links = [
   {
     id: 2,
     pathName: "People",
-    path: "/"
+    path: "/People"
   },
   {
     id: 3,
     pathName: "Partners",
-    path: "/"
+    path: "/Partners"
   },
   {
     id: 4,
     pathName: "Feedbacks",
-    path: "/"
+    path: "/Feedbacks"
   },
 
 ]
