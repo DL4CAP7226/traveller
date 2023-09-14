@@ -14,7 +14,7 @@ $paragraph_light: #a6a6a6;
 $btn_bg: #ff6525;
 $underline_bg: #fdc868;
 
-h1 {
+h1,h2,p {
     font-family: inter;
 }
 
@@ -51,6 +51,7 @@ button {
 @import './layout/footer';
 
 @import './layout/containers';
+@import './pages/homePage';
 
 
 .page-not-found {
