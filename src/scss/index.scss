@@ -1,0 +1,53 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+$body_bg: #ffffff;
+$topsection_bg: #fef9f3;
+$circle_: #ede2d5;
+$heading_color: #2c090b;
+$paragraph_color: #3c3b39;
+$paragraph_light: #a6a6a6;
+$btn_bg: #ff6525;
+$underline_bg: #fdc868;
+
+h1 {
+    font-family: inter;
+}
+
+body {
+    background: $body_bg ;
+}
+
+ul {
+    list-style-type: none;
+    font-family: inter;
+}
+
+
+
+a {
+    font-family: inherit;
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+@mixin flex($dir, $justify, $align) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+
+}
+
+
+@import './layout/navbar';
+@import './layout/footer';
+
+@import './layout/containers';
