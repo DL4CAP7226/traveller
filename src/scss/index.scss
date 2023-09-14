@@ -84,6 +84,22 @@ button {
     }
 }
 
+@mixin button() {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 7px 55px 5px rgba(0, 0, 0, 0.31);
+    @include flex(row, center, center);
+
+    .icon {
+        font-size: 20px;
+        color: $btn_bg;
+    }
+}
+
+
+
 @import './layout/navbar';
 @import './layout/footer';
 
