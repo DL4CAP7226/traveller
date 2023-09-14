@@ -49,42 +49,86 @@
             }
         }
     }
-
-
-
-
-
-
 }
 
 
 .sectionTwo {
+
     .image {
         margin-top: 30px;
-        height: 50vh;
+        height: 70vh;
         background-image: url('../../images/section2.png');
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: contain;
+        background-size: cover;
     }
 
     .content {
         p {
-            font-size: 18px;
-            font-weight: 500;
-            text-transform: uppercase;
-            color: $paragraph_light;
-            text-align: center;
-            letter-spacing: 2px;
-            line-height: 24px;
+            @include capitalText(center)
         }
 
         h2 {
-            font-size: 36px;
             text-align: center;
             position: relative;
-            line-height: 46px;
             @include border(50%)
         }
+    }
+}
+
+
+
+.sectionThree {
+    @include flex(row, space-between, center);
+
+    .functions {
+        margin-top: 50px;
+        @include flex(row, flex-start, flex-start);
+
+        p {
+            color: $paragraph_color;
+            line-height: 28px;
+        }
+
+        h3 {
+            line-height: 36px;
+        }
+
+        a {
+            width: 50px;
+            height: 50px;
+            margin-right: 30px;
+            padding: 10px;
+            border-radius: 50%;
+            box-shadow: 0px 7px 55px 5px rgba(0, 0, 0, 0.31);
+            @include flex(row, center, center);
+
+            .icon {
+                font-size: 20px;
+                color: $btn_bg;
+            }
+        }
+    }
+
+    .content {
+        width: 40%;
+
+        .uppeprCase {
+            @include capitalText(left)
+        }
+
+        h2 {
+            position: relative;
+            @include border(0)
+        }
+    }
+
+    .image {
+        width: 60%;
+        height: 70vh;
+        background-image: url('../../images/section3.png');
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: contain;
     }
 }

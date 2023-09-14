@@ -15,11 +15,16 @@ $btn_bg: #ff6525;
 $underline_bg: #fdc868;
 
 h1,
-h2 {
+h2,
+h3 {
     color: $heading_color;
     font-family: inter;
 }
 
+h2 {
+    font-size: 36px;
+    line-height: 46px;
+}
 
 
 
@@ -55,8 +60,18 @@ button {
 
 }
 
+@mixin capitalText($align) {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $paragraph_light;
+    text-align: $align;
+    letter-spacing: 2px;
+    line-height: 24px;
+}
 
-@mixin border($left){
+
+@mixin border($left) {
     &::after {
         width: 50px;
         height: 7px;

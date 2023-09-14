@@ -1,13 +1,17 @@
 import React from 'react'
 import { Container } from '../../layout'
-import { SectionOne, SectionTwo } from '../../pagesComponents'
+import { SectionOne, SectionTwo, SectionThree } from '../../pagesComponents'
 
 const Home = () => {
   return (
-    <Container>
-      <SectionOne />
-      <SectionTwo/>
-    </Container>
+    <>
+      <Container>
+        <SectionOne />
+        <SectionTwo />
+        <SectionThree />
+      </Container>
+    </>
+
   )
 }
 
