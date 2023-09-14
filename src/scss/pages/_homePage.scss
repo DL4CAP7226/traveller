@@ -132,3 +132,35 @@
         background-size: contain;
     }
 }
+
+
+
+.sectionFour {
+    @include flex(row, space-between, flex-start);
+
+    .content {
+        width: 40%;
+
+        .uppeprCase {
+            @include capitalText(left)
+        }
+
+        h2 {
+            position: relative;
+            @include border(0)
+        }
+
+        .text {
+            margin-top: 30px;
+        }
+    }
+
+    .image {
+        width: 60%;
+        height: 70vh;
+        background-image: url('../../images/01.png');
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: contain;
+    }
+}
