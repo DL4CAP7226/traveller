@@ -14,7 +14,16 @@ $paragraph_light: #a6a6a6;
 $btn_bg: #ff6525;
 $underline_bg: #fdc868;
 
-h1,h2,p {
+h1,
+h2 {
+    color: $heading_color;
+    font-family: inter;
+}
+
+
+
+
+p {
     font-family: inter;
 }
 
@@ -46,6 +55,19 @@ button {
 
 }
 
+
+@mixin border($left){
+    &::after {
+        width: 50px;
+        height: 7px;
+        position: absolute;
+        bottom: -10px;
+        border-radius: 3px;
+        left: $left;
+        content: "";
+        background: $underline_bg;
+    }
+}
 
 @import './layout/navbar';
 @import './layout/footer';

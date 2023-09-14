@@ -45,17 +45,7 @@
                 width: 40%;
                 position: relative;
                 line-height: 96px;
-
-                &::after {
-                    width: 50px;
-                    height: 10px;
-                    position: absolute;
-                    bottom: -10px;
-                    border-radius: 3px;
-                    left: 0;
-                    content: "";
-                    background: $underline_bg;
-                }
+                @include border(0)
             }
         }
     }
@@ -65,4 +55,36 @@
 
 
 
+}
+
+
+.sectionTwo {
+    .image {
+        margin-top: 30px;
+        height: 50vh;
+        background-image: url('../../images/section2.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+
+    .content {
+        p {
+            font-size: 18px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: $paragraph_light;
+            text-align: center;
+            letter-spacing: 2px;
+            line-height: 24px;
+        }
+
+        h2 {
+            font-size: 36px;
+            text-align: center;
+            position: relative;
+            line-height: 46px;
+            @include border(50%)
+        }
+    }
 }

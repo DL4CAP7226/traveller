@@ -1,11 +1,12 @@
 import React from 'react'
 import { Container } from '../../layout'
-import { SectionOne } from '../../pagesComponents'
+import { SectionOne, SectionTwo } from '../../pagesComponents'
 
 const Home = () => {
   return (
     <Container>
       <SectionOne />
+      <SectionTwo/>
     </Container>
   )
 }
