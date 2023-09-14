@@ -1,9 +1,15 @@
 .footer {
     padding: 100px;
-
+    .functions{
+        a{
+            .icon{
+                color: $paragraph_color
+            }
+        }
+    }
     .bottemNavigation{
         @include flex(row,space-between,center);
-        .links{
+        .linked{
         @include flex(row,flex-start,flex-start);
         li{
             margin: 20px

@@ -1,6 +1,6 @@
 import React from 'react'
 import { footerLinks } from '../../data'
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiTwitter, FiFacebook, FiInstagram, FiYoutube } from "react-icons/fi";
 import ReactStars from "react-rating-stars-component";
 import { Link } from 'react-router-dom';
 
@@ -26,6 +26,30 @@ const links = [
     path: "/Feedbacks"
   },
 
+]
+
+
+const socialLinks = [
+  {
+    link: "#",
+    icon: <FiFacebook className='icon' />
+
+  },
+  {
+    link: "#",
+    icon: <FiInstagram className='icon' />
+
+  },
+  {
+    link: "#",
+    icon: <FiTwitter className='icon' />
+
+  },
+  {
+    link: "#",
+    icon: <FiYoutube className='icon' />
+
+  },
 ]
 
 const Footer = () => {
@@ -62,11 +86,21 @@ const Footer = () => {
       </div>
       <div className='bottemNavigation' >
         <h1>Travelers</h1>
-        <ul className='links'>
+        <ul className='linked'>
           {
             links.map(l => <li key={l.id}><Link to={l.path}> {l.pathName} </Link></li>)
           }
+
+
+
         </ul>
+
+        <div className='functions'>
+          {
+            socialLinks.map((l, idx) => <a key={idx} href={l.link}>{l.icon}</a>)
+          }
+        </div>
+
       </div>
     </footer>
   )
