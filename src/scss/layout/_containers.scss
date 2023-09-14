@@ -7,3 +7,17 @@
     width: 80%;
 
 }
+
+
+
+@media screen and (max-width:1400px) {
+    .innerContainer{
+       max-width:1320px ;
+    }
+}
+@media screen and (max-width:1200px) {
+    .innerContainer{
+       width:95% ;
+       border: 1px solid green;
+    }
+}

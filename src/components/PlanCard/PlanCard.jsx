@@ -1,12 +1,8 @@
 import React from 'react'
 import { FiCheck ,FiArrowRight} from "react-icons/fi";
 
-
-
-
 const PlanCard = ({ data, checked }) => {
     return (
-        <div className="cards" >
             <div className="card">
                 <div className="prices">
                     <p className='price'><span>${checked ? data.ammountYealry : data.ammountMonthly}</span>{checked ? '/year' : '/month'}</p>
@@ -18,7 +14,6 @@ const PlanCard = ({ data, checked }) => {
                 </div>
                 <button>Get Started <FiArrowRight className='icon' /> </button>
             </div>
-        </div>
     )
 }
 

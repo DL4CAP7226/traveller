@@ -111,12 +111,12 @@
         }
 
         .icon {
-            font-size: 16px;
+            font-size: 14px;
             color: green;
             background-color: rgba($color: green, $alpha: 0.2);
             border-radius: 50%;
             padding: 3px;
-            margin-right: 10px;
+            margin-right: 5px;
         }
 
     }
@@ -149,4 +149,17 @@
         }
     }
 
+}
+
+@media screen and (max-width:1400px) {
+    .card {
+        min-width: 30%;
+        margin: 20px;
+    }
+}
+@media screen and (max-width:768px) {
+    .card {
+        min-width: 300px;
+        margin: 20px;
+    }
 }
