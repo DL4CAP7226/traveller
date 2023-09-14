@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container } from '../../layout'
-import { SectionOne, SectionTwo, SectionThree, SectionFour } from '../../pagesComponents'
+import { SectionOne, SectionTwo, SectionThree, SectionFour,SectionFive } from '../../pagesComponents'
 
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
         <SectionTwo />
         <SectionThree />
         <SectionFour />
+        <SectionFive/>
       </Container>
     </>
 
